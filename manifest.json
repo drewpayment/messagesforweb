@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Messages for Web",
+    "version": "0.1.0",
+    "description": "Android Messages for Web implemented in a clean popup window, removing the browser clutter and letting you focus on the web app.",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
+    "permissions": ["declarativeContent", "tabs"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "assets/messages-icon-16.png",
+            "32": "assets/messages-icon-32.png",
+            "64": "assets/messages-icon-64.png",
+            "128": "assets/messages-icon-128.png"
+        }
+    },
+    "icons": {
+        "16": "assets/messages-icon-16.png",
+        "32": "assets/messages-icon-32.png",
+        "64": "assets/messages-icon-64.png",
+        "128": "assets/messages-icon-128.png"
+    }
+}
