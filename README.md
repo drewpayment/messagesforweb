@@ -9,4 +9,5 @@ that coincide with the web application.
 ### CHANGELOG
 
 0.1.0 --- Initial version, public release.
+
 0.1.1 --- Fixed 16x16 icon so that icon looks right on taskbars and in Chrome extension menu (cut me some slack guys, I'm no graphic designer).
